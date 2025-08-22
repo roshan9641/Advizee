@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ✅ Modern Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="logo">🚀 Logo</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="about">About</a></li>
+        <li><a href="#" data-page="services">Services</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="content"></main>
+
+  <!-- Book a Call Modal -->
+  <div id="callModal" class="modal">
+    <div class="modal-content">
+      <span class="close call-close">&times;</span>
+      <h2>📞 Book a Call</h2>
+      <form id="callForm">
+        <label for="callName">Your Name *</label><br>
+        <input type="text" id="callName" required placeholder="Enter your Name"><br><br>
+        <label for="callPhone">Your Phone Number *</label><br>
+        <input type="tel" id="callPhone" required placeholder="+91 XXXXX XXXXX"><br><br>
+        <label for="callDate">Select Date *</label><br>
+        <input type="date" id="callDate" required><br><br>
+        <label for="callTime">Select Time *</label><br>
+        <input type="time" id="callTime" required><br><br>
+        <button type="submit" class="btn">✅ Schedule Call</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Your Name *</label><br>
+        <input type="text" id="name" required placeholder="Enter your Name"><br><br>
+        <label for="phone">Your WhatsApp Number *</label><br>
+        <input type="tel" id="phone" required placeholder="+91 XXXXX XXXXX"><br><br>
+        <label for="message">Your Message *</label><br>
+        <textarea id="message" required placeholder="Hey, I’m looking our query"></textarea><br><br>
+        <button type="submit" class="btn whatsapp">💬 WhatsApp Us</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sticky WhatsApp Button -->
+  <a href="https://wa.me/919641460041" target="_blank" class="sticky-cta">💬 Chat Now</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
